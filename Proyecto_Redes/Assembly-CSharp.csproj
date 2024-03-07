@@ -306,14 +306,14 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="FishNet.CodeAnalysis">
+      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Assets\FishNet\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="FishNet.CodeAnalysis">
-      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Assets\FishNet\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -702,9 +702,6 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
@@ -716,6 +713,9 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -735,9 +735,6 @@
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -746,6 +743,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
@@ -769,13 +769,13 @@
       <Project>{a6c61704-3df0-7229-667b-780884cca8c2}</Project>
       <Name>FishNet.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="ParrelSync.csproj">
-      <Project>{6e08f291-d59b-0db8-2792-982d01062a3c}</Project>
-      <Name>ParrelSync</Name>
-    </ProjectReference>
     <ProjectReference Include="FishNet.Codegen.Cecil.csproj">
       <Project>{98eba8a5-faa0-5494-d71f-ce832bca8172}</Project>
       <Name>FishNet.Codegen.Cecil</Name>
+    </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{6e08f291-d59b-0db8-2792-982d01062a3c}</Project>
+      <Name>ParrelSync</Name>
     </ProjectReference>
     <ProjectReference Include="FishNet.Demos.csproj">
       <Project>{d72096b0-494e-2b0b-f8bc-5e9124dc4987}</Project>

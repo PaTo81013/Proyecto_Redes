@@ -325,6 +325,9 @@
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
+    <Reference Include="FishNet.CodeAnalysis">
+      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Assets\FishNet\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
@@ -348,9 +351,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="FishNet.CodeAnalysis">
-      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Assets\FishNet\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
