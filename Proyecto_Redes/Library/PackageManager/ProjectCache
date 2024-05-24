@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638452850925456604
-    m_Hash: 3179857767
+      ticks: 638517643984692797
+    m_Hash: 568479246
   m_LockFileStatus:
     m_FilePath: D:/Unity projects/Proyecto_Redes/Proyecto_Redes/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638452850927920138
-    m_Hash: 4071356913
+      ticks: 638517643985237214
+    m_Hash: 2685115140
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,64 @@ m_LocalPackages:
 m_ProjectPath: D:/Unity projects/Proyecto_Redes/Proyecto_Redes/Packages
 m_EditorVersion: 2022.3.20f1 (61c2feb0970d)
 m_ResolvedPackages:
+- packageId: com.unity.2d.sprite@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.2d.sprite@1.0.0
+  assetPath: Packages/com.unity.2d.sprite
+  name: com.unity.2d.sprite
+  displayName: 2D Sprite
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
+    like pivot, borders and Physics shape
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - 2d
+  - sprite
+  - sprite editor window
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.3.1
   testable: 0
   isDirectDependency: 1
@@ -377,6 +435,7 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -392,6 +451,7 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -403,7 +463,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.9
     - 4.0.0-pre.1
     - 4.0.0-pre.2
-    recommended: 3.0.8
+    recommended: 3.0.9
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -614,6 +674,101 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.toolchain.win-x86_64-linux-x86_64@2.0.9
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.9
+  source: 1
+  resolvedPath: D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.toolchain.win-x86_64-linux-x86_64@2.0.9
+  assetPath: Packages/com.unity.toolchain.win-x86_64-linux-x86_64
+  name: com.unity.toolchain.win-x86_64-linux-x86_64
+  displayName: Toolchain Win Linux x64
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Cross-compilation toolchain to build player target Linux x86_64 on
+    host Windows x86_64
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.4-preview
+    - 0.1.5-preview
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 0.1.20-preview
+    - 0.1.21-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    compatible:
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    recommended: 2.0.9
+    deprecated: []
+  dependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  - name: com.unity.sysroot.linux-x86_64
+    version: 2.0.9
+  resolvedDependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  - name: com.unity.sysroot.linux-x86_64
+    version: 2.0.9
+  keywords:
+  - toolchain
+  - windows
+  - linux
+  - cross-compilation
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638500639580000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.toolchain.win-x86_64-linux-x86_64@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: bf7a008256a1175e0f8a0d7d26d6826cbfbe1bb2
+    path: 
+  unityLifecycle:
+    version: 2.0.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -640,6 +795,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 3.0.0-exp.1
     - 3.0.0-exp.3
+    - 3.0.0-exp.4
     compatible:
     - 1.0.0
     recommended: 1.0.0
@@ -685,12 +841,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.visualscripting@1.9.1
+- packageId: com.unity.visualscripting@1.9.4
   testable: 0
   isDirectDependency: 1
-  version: 1.9.1
+  version: 1.9.4
   source: 1
-  resolvedPath: D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.visualscripting@1.9.1
+  resolvedPath: D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.visualscripting@1.9.4
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -736,10 +892,12 @@ m_ResolvedPackages:
     - 1.9.0
     - 1.9.1
     - 1.9.2
+    - 1.9.4
     compatible:
     - 1.9.1
     - 1.9.2
-    recommended: 1.9.2
+    - 1.9.4
+    recommended: 1.9.4
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -767,13 +925,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638284821510000000
+  datePublishedTicks: 638488567680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 5e78e9c354ed1567dbcea08e2bd9992e4a473cfb
+    revision: 41aac2b7038c2b1259c546329890d3736ce2394e
     path: 
   unityLifecycle:
     version: 1.9.1
@@ -2684,6 +2842,169 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.sysroot@2.0.10
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.10
+  source: 1
+  resolvedPath: D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.sysroot@2.0.10
+  assetPath: Packages/com.unity.sysroot
+  name: com.unity.sysroot
+  displayName: Sysroot Base
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: This is the base sysroot package required by all sysroot and toolchain
+    packages
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.7
+    - 2.0.10
+    compatible:
+    - 2.0.5
+    - 2.0.6
+    - 2.0.7
+    - 2.0.10
+    recommended: 2.0.10
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  - linux
+  - sysroot
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638500638510000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.sysroot@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: 48e503c8f30007e813fbcec90dc84795285406b4
+    path: 
+  unityLifecycle:
+    version: 2.0.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.sysroot.linux-x86_64@2.0.9
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.9
+  source: 1
+  resolvedPath: D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.sysroot.linux-x86_64@2.0.9
+  assetPath: Packages/com.unity.sysroot.linux-x86_64
+  name: com.unity.sysroot.linux-x86_64
+  displayName: Sysroot Linux x64
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Sysroot used to build unity player for linux x86_64
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    compatible:
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    recommended: 2.0.9
+    deprecated: []
+  dependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  resolvedDependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  keywords:
+  - unity
+  - linux
+  - sysroot
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638500638600000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.sysroot.linux-x86_64@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: bf7a008256a1175e0f8a0d7d26d6826cbfbe1bb2
+    path: 
+  unityLifecycle:
+    version: 2.0.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 0
@@ -3146,6 +3467,7 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.4.4
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3165,6 +3487,7 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.4.4
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
