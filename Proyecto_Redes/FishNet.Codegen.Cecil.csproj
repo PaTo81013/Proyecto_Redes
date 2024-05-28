@@ -165,8 +165,8 @@
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil.Metadata\PdbHeap.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\IMetadataScope.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\MetadataSystem.cs" />
-    <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\PointerType.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\IMemberDefinition.cs" />
+    <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\PointerType.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil.PE\ByteBuffer.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\ArrayType.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\Import.cs" />
