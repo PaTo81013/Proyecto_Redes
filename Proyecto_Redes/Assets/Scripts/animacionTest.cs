@@ -19,6 +19,10 @@ public class animacionTest : MonoBehaviour
         {
             _animator.CrossFade("Jump",0f);
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            _animator.CrossFade("Box",0f);
+        }
 
        
     }
