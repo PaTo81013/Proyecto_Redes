@@ -10,11 +10,27 @@ using UnityEngine;
 public class PlayerSpawner : MonoBehaviour
 {
     public GameObject[] personajes;
-    
+    public Transform[] Spawns = new Transform[0];
+    public int _nextSpawn;
+    public string _SelectedPlayer ;
+    public GameObject _Canvas;
+
+
     void Start()
     {
         InstanceFinder.ServerManager.RegisterBroadcast<PersonajeSelecionadoPackage>(OnPersonajeSeleccionadoBroadcast);
+        InstanceFinder.ClientManager.OnClientConnectionState+= ClientManagerOnOnClientConnectionState;
         
+    }
+
+    private void ClientManagerOnOnClientConnectionState(ClientConnectionStateArgs ClientState)
+    {
+        if (ClientState.ConnectionState== LocalConnectionState.Started)
+        {
+            PersonajeSeleccionado();
+            _Canvas.SetActive(false);
+
+        }
     }
 
     void OnDestroy()
@@ -23,12 +39,12 @@ public class PlayerSpawner : MonoBehaviour
     }
 
     // Del lado del cliente llamar esta función, UNA VEZ CONECTADO
-    public void PersonajeSeleccionado(GameObject prefabPersonaje)
+    public void PersonajeSeleccionado()
     {
         PersonajeSelecionadoPackage msg = new PersonajeSelecionadoPackage();
-        msg.nombrePersonajeSeleccionado = "Mario";
-        msg.personajeSeleccionadoIndex = 2;
-        msg.personajeSeleccionado = prefabPersonaje;
+        msg.nombrePersonajeSeleccionado = _SelectedPlayer;
+       //msg.personajeSeleccionadoIndex = 2;
+        //msg.personajeSeleccionado = prefabPersonaje;
         
         InstanceFinder.ClientManager.Broadcast(msg);
     }
@@ -36,14 +52,15 @@ public class PlayerSpawner : MonoBehaviour
     // Esto se ejecuta del lado del servidor
     void OnPersonajeSeleccionadoBroadcast(NetworkConnection conn, PersonajeSelecionadoPackage msg)
     {
+        GameObject go;
         // Utilizas msg
-        GameObject go = Instantiate(msg.personajeSeleccionado); // opt1
-        go = Instantiate(personajes[msg.personajeSeleccionadoIndex]); // opt2
+        //GameObject go = Instantiate(msg.personajeSeleccionado); // opt1
+        //go = Instantiate(personajes[msg.personajeSeleccionadoIndex]); // opt2
         go = Instantiate(Resources.Load<GameObject>(msg.nombrePersonajeSeleccionado)); // opt 3
         
-        
-        go.transform.position = Vector3.zero;
-        go.transform.rotation = Quaternion.identity;
+        SetSpawn(go.transform,out Vector3 pos,out Quaternion rot);
+        go.transform.position = pos;
+        go.transform.rotation = rot;
         InstanceFinder.ServerManager.Spawn(go, conn); // Spawnea este personaje y el que mando el mensaje es el dueño
     }
     
@@ -54,4 +71,40 @@ public class PlayerSpawner : MonoBehaviour
         public int personajeSeleccionadoIndex;
         public string nombrePersonajeSeleccionado; // Resources
     }
+    private void SetSpawn(Transform prefab, out Vector3 pos, out Quaternion rot)
+    {
+        //No spawns specified.
+        if (Spawns.Length == 0)
+        {
+            SetSpawnUsingPrefab(prefab, out pos, out rot);
+            return;
+        }
+
+        Transform result = Spawns[_nextSpawn];
+        if (result == null)
+        {
+            SetSpawnUsingPrefab(prefab, out pos, out rot);
+        }
+        else
+        {
+            pos = result.position;
+            rot = result.rotation;
+        }
+
+        //Increase next spawn and reset if needed.
+        _nextSpawn++;
+        if (_nextSpawn >= Spawns.Length)
+            _nextSpawn = 0;
+    }
+    private void SetSpawnUsingPrefab(Transform prefab, out Vector3 pos, out Quaternion rot)
+    {
+        pos = prefab.position;
+        rot = prefab.rotation;
+    }
+
+    public void SetPersonaje(string _namePlayer)
+    {
+        _SelectedPlayer = _namePlayer;
+    }
+
 }

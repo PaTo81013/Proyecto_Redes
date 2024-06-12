@@ -18,7 +18,8 @@ public class PlayerMovement : NetworkBehaviour
         //transform.Translate(move, 0, 0);
        
         _Rigidbody.AddForce(Vector3.right * move ,ForceMode.Impulse);
-        _animator.SetBool("Walk",true);
+        bool _isMoving = move != 0f;
+        _animator.SetBool("Walk",_isMoving);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _animator.SetBool("Jump", true);
