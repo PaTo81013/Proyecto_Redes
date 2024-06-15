@@ -623,6 +623,9 @@
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>D:\Unity projects\Proyecto_Redes\Proyecto_Redes\Assets\PlayFlowCloud\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
     </Reference>
