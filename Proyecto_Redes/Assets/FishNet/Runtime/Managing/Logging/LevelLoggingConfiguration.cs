@@ -115,7 +115,7 @@ namespace FishNet.Managing.Logging
         public override void LogWarning(string value)
         {
             if (CanLog(LoggingType.Warning))
-                Debug.LogWarning(value);
+               Debug.LogWarning(value);
         }
 
         /// <summary>

@@ -71,6 +71,9 @@ namespace FishNet.Object
         /// Realistically this value is much smaller but this value is used as a buffer.
         /// </summary>
         private const int MAXIMUM_RPC_HEADER_SIZE = 10;
+
+       
+
         #endregion
 
         /// <summary>

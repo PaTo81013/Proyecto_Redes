@@ -375,6 +375,7 @@
 "Assets/PlayFlowCloud/Scripts/PlayFlowBackend.cs"
 "Assets/PlayFlowCloud/Scripts/PlayFlowManager.cs"
 "Assets/PlayFlowCloud/Scripts/PlayFlowMatchMaker.cs"
+"Assets/Scenes/ReturnGame.cs"
 "Assets/Scripts/AnimacionSync.cs"
 "Assets/Scripts/animacionTest.cs"
 "Assets/Scripts/AnimatorSetboolfalse.cs"

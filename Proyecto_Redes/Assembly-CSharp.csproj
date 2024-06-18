@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\animacionTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scenes\ReturnGame.cs" />
     <Compile Include="Assets\Scripts\PredictionManager.cs" />
     <Compile Include="Assets\FishNet\Upgrading\MirrorUpgrade.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

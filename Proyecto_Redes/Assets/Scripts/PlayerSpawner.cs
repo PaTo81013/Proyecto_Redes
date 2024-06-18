@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using FishNet;
 using FishNet.Broadcast;
 using FishNet.Connection;
+using FishNet.Object;
 using FishNet.Transporting;
 using UnityEngine;
 
@@ -62,6 +63,7 @@ public class PlayerSpawner : MonoBehaviour
         go.transform.position = pos;
         go.transform.rotation = rot;
         InstanceFinder.ServerManager.Spawn(go, conn); // Spawnea este personaje y el que mando el mensaje es el dueño
+        InstanceFinder.SceneManager.AddOwnerToDefaultScene(go.GetComponent<NetworkObject>()); 
     }
     
     public struct PersonajeSelecionadoPackage : IBroadcast
